@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  box-sizing: border-box;
+  background:#3e3636
+  
+}
+
+
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 644px;
+  height: 644px;
+  box-shadow: 1px 1px 15px #777777;
+  border-radius: 10px;
+  
+}
+
+.container2 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  box-shadow: 1px 1px 15px #777777;
+  background: #6c0000;
+
+}
+
+.game-over {
+  color: antiquewhite;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.restart-btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 1px solid antiquewhite;
+  width: 70%;
+  height: 50px;
+  background: #6c0000;
+  color: antiquewhite;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: 0;
+}
+
+.restart-btn:hover {
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    box-shadow: 1px 1px 200px #ff0000;
+    text-shadow: 1px 1px 50px antiquewhite;
+}
+
+
+.score {
+  color: aliceblue;
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.container div {
+  width: 23px;
+  height: 23px;
+  box-sizing: border-box;
+  
+  color: aliceblue;
+  font-size: 10px;
+  transition: 0.2s;
+}
+
+.path {
+  background:#000000;
+  
+}
+
+.wall {
+  background:#002444;
+}
+
+.current-position {
+  
+  width: 23px;
+  height: 23px;
+  transition: 0.2s;
+  position: relative;
+ 
+}
+
+.current-position::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: forestgreen;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  z-index: 222;
+} 
+
+
+
+.coin {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  
+}
+
+.coin::after {
+  width: 18px;
+  height: 18px;
+  content: "";
+  display: block;
+  background: gold;
+  border-radius: 100%;
+  position: absolute;
+  top: 2px;
+  right: 1px;
+}
+
+.ghost {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.9s;
+}
+
+.ghost::before {
+  width: 22px;
+  height: 22px;
+  content: "";
+  display: block;
+  background: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  z-index: 333;
+  opacity: 0.8;
+}
+
+.hide {
+  display: none;
+}
