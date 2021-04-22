@@ -1,7 +1,7 @@
 body {
   text-align: center;
   box-sizing: border-box;
-  background:#3e3636
+  background:#000000
   
 }
 
@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   width: 644px;
   height: 644px;
-  box-shadow: 1px 1px 15px #777777;
+  box-shadow: 1px 1px 55px #18edea;
   border-radius: 10px;
   
 }
@@ -27,8 +27,8 @@ body {
   align-items: center;
   width: 700px;
   height: 700px;
-  box-shadow: 1px 1px 15px #777777;
-  background: #6c0000;
+  box-shadow: 1px 1px 55px #18edea;
+  background: #000000;
 
 }
 
@@ -42,11 +42,11 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 900;
-  border: 1px solid antiquewhite;
+  border: 1px solid #18edea;
   width: 70%;
   height: 50px;
-  background: #6c0000;
-  color: antiquewhite;
+  background: #18edea;
+  color: #000000;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s;
@@ -54,9 +54,9 @@ body {
 }
 
 .restart-btn:hover {
-    background: #ff0000;
-    border: 1px solid #ff0000;
-    box-shadow: 1px 1px 200px #ff0000;
+    background: #000000;
+    border: 1px solid #18edea;
+    box-shadow: 1px 1px 200px #18edea;
     text-shadow: 1px 1px 50px antiquewhite;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .wall {
-  background:#002444;
+  background:#18edea;
 }
 
 .current-position {
@@ -100,7 +100,7 @@ body {
   display: block;
   width: 23px;
   height: 23px;
-  background: forestgreen;
+  background:#0C7FF7;
   background-position: center;
   background-size: cover;
   border-radius: 100%;
@@ -140,7 +140,7 @@ body {
   height: 22px;
   content: "";
   display: block;
-  background: red;
+  background: #737373;
   position: absolute;
   top: 0;
   right: 0;
